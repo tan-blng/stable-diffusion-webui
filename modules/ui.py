@@ -1304,7 +1304,13 @@ def create_ui():
     loadsave.dump_defaults()
     demo.ui_loadsave = loadsave
 
+
+    with demo:
+        gr.Markdown(
+          'Created by [AUTOMATIC1111 / stable-diffusion-webui-docker](https://github.com/AbdBarho/stable-diffusion-webui-docker/)'
+        )
     return demo
+
 
 
 def versions_html():
